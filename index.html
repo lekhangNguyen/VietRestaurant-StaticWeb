@@ -78,6 +78,45 @@
 </header>
 
 
+</section>
+
+<script>
+    function showGif(event, gifId) {
+        event.preventDefault();
+        const overlay = document.getElementById(gifId);
+        overlay.style.display = 'flex';
+        const script = document.createElement('script');
+        script.src = 'https://tenor.com/embed.js';
+        script.async = true;
+        overlay.appendChild(script);
+    }
+
+    function hideGif(event) {
+        if (event.target.classList.contains('overlay')) {
+            event.target.style.display = 'none';
+        }
+    }
+
+    function showAlert(event, message) {
+        event.preventDefault();
+        alert(message);
+    }
+
+    function validateForm(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const number = document.getElementById('number').value.trim();
+
+        if (name && email && number) {
+            alert('Sent!');
+        } else {
+            alert('Please fill the form');
+        }
+    }
+
+
+</script>
 
 
 <section class="home" id="home">
@@ -85,7 +124,15 @@
     <div class="content">
         <h3>Your Vietnamese Dish</h3>
         <p>we are here to serve you</p>
-        <a href="#" class="btn">explore</a>
+        <a href="#" class="btn" onclick="showGif(event, 'constructionGif')">explore</a>
+    </div>
+
+    <!--GIF -->
+    <div id="constructionGif" class="overlay" style="display: none;" onclick="hideGif(event)">
+        <div class="tenor-gif-embed" data-postid="3307585049437585751" data-share-method="host" data-aspect-ratio="0.804444" data-width="100%">
+            <a href="https://tenor.com/view/aftermath-smokingbro-shix-server-is-down-server-gif-3307585049437585751">Aftermath Smokingbro GIF</a> from 
+            <a href="https://tenor.com/search/aftermath-gifs">Aftermath GIFs</a>
+        </div>
     </div>
 
 </section>
@@ -104,8 +151,15 @@
             <h3>about our restaurant</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <a href="#" class="btn">read more</a>
+            <a href="#" class="btn" onclick="showGif(event, 'aboutGif')">read more</a>
+        </div>
+    </div>
 
+    <!--GIF -->
+    <div id="aboutGif" class="overlay" style="display: none;" onclick="hideGif(event)">
+        <div class="tenor-gif-embed" data-postid="15241557575358618548" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+            <a href="https://tenor.com/view/happy-chinese-new-year-happy-lunar-new-year-fireworks-dragon-dance-cute-gif-15241557575358618548">Happy Chinese New Year Happy Lunar New Year GIF</a> from 
+            <a href="https://tenor.com/search/happy+chinese+new+year-gifs">Happy Lunar New Year GIFs</a>
         </div>
     </div>
 
@@ -113,7 +167,45 @@
 
 
 
+<!--FUNCTIONS -->
+<script>
+    
+    "forGIF"
+    function showGif(event, gifId) {
+        event.preventDefault();
+        const overlay = document.getElementById(gifId);
+        overlay.style.display = 'flex';
+        const script = document.createElement('script');
+        script.src = 'https://tenor.com/embed.js';
+        script.async = true;
+        overlay.appendChild(script);
+    }
+    "closeGIF"
+    function hideGif(event) {
+        if (event.target.classList.contains('overlay')) {
+            event.target.style.display = 'none';
+        }
+    }
+    "showAlert"
+    function showAlert(event, message) {
+        event.preventDefault();
+        alert(message);
+    }
+    "checkContactForm"
+    function validateForm(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const number = document.getElementById('number').value.trim();
 
+        if (name && email && number) {
+            alert('Sent!');
+        } else {
+            alert('Fill the form');
+        }
+    }
+
+</script>
 
 
 <section class="menu" id="menu">
@@ -126,43 +218,37 @@
             <img src="images/menu-1.jpg" alt="">
             <h3>Bun Bo Hue</h3>
             <div class="price">$15.99 <span>20.99</span></div>
-            <a href="#" class="btn">order now</a>
-        </div>
+            <a href="#" class="btn" onclick="showAlert(event, 'Good choice!')">order now</a>        </div>
         
         <div class="box">
             <img src="images/menu-2.jpg" alt="">
             <h3>Com Tam</h3>
             <div class="price">$15.99 <span>20.99</span></div>
-            <a href="#" class="btn">order now</a>
-        </div>
+            <a href="#" class="btn" onclick="showAlert(event, 'Are you Vietnamese!')">order now</a>        </div>
 
         <div class="box">
             <img src="images/menu-3.jpg" alt="">
             <h3>Bun Mam</h3>
             <div class="price">$15.99 <span>20.99</span></div>
-            <a href="#" class="btn">order now</a>
-        </div>
+            <a href="#" class="btn" onclick="showAlert(event, 'Wise!')">order now</a>        </div>
 
         <div class="box">
             <img src="images/menu-4.jpg" alt="">
             <h3>Banh Nam</h3>
             <div class="price">$15.99 <span>20.99</span></div>
-            <a href="#" class="btn">order now</a>
-        </div>
+            <a href="#" class="btn" onclick="showAlert(event, 'Great choice!')">order now</a>        </div>
 
         <div class="box">
             <img src="images/menu-5.jpg" alt="">
             <h3>Hu Tieu Kho</h3>
             <div class="price">$15.99 <span>20.99</span></div>
-            <a href="#" class="btn">order now</a>
-        </div>
+            <a href="#" class="btn" onclick="showAlert(event, 'Local choice!')">order now</a>        </div>
 
         <div class="box">
             <img src="images/menu-6.jpg" alt="">
             <h3>Che Thap Cam</h3>
             <div class="price">$15.99 <span>20.99</span></div>
-            <a href="#" class="btn">order now</a>
-        </div>
+            <a href="#" class="btn" onclick="showAlert(event, 'You spot a gem!')">order now</a>        </div>
     
     </div>
 
@@ -307,26 +393,25 @@
 
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124289.16553889301!2d24.45399979625862!3d60.873233653648505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468e5d7f1a184209%3A0xe69734d5c10042bd!2sHAMK%20H%C3%A4me%20University%20of%20Applied%20Sciences!5e0!3m2!1sen!2sfi!4v1737660915584!5m2!1sen!2sfi" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
-        <form action="">
+        <form action="" onsubmit="validateForm(event)">
             <h3>get in touch</h3>
             <div class="inputBox">
                 <span class="fas fa-user"></span>
-                <input type="text" placeholder="name">
+                <input type="text" id="name" placeholder="name">
             </div>
             <div class="inputBox">
                 <span class="fas fa-envelope"></span>
-                <input type="email" placeholder="email">
+                <input type="email" id="email" placeholder="email">
             </div>
             <div class="inputBox">
                 <span class="fas fa-phone"></span>
-                <input type="number" placeholder="number">
+                <input type="number" id="number" placeholder="number">
             </div>
             <input type="submit" value="contact now" class="btn">
         </form>
 
     </div>
 </section>
-
 
 
 
@@ -341,42 +426,40 @@
 
         <div class="box">
             <div class="image">
-                <img src="images/blog-1.jpg" alt="">
+                <img src="images/blog-1.jpg" alt="" onclick="showAlert(event)">
             </div>
             <div class="content">
                 <a href="#" class="title">Recipe 1</a>
                 <span>by team13 / 23.01.2025</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <a href="#" class="btn">read more</a>
-            </div>
+                <a href="#" class="btn" onclick="showAlert(event, 'What makes you think we would share our secret recipes?')">read more</a>            </div>
         </div>
 
         <div class="box">
             <div class="image">
-                <img src="images/blog-2.jpg" alt="">
+                <img src="images/blog-2.jpg" alt="" onclick="showAlert(event)">
             </div>
             <div class="content">
                 <a href="#" class="title">Recipe 2</a>
                 <span>by team13 / 23.01.2025</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <a href="#" class="btn">read more</a>
-            </div>
+                <a href="#" class="btn" onclick="showAlert(event, 'Still Trying? Give up')">read more</a>            </div>
         </div>
 
         <div class="box">
             <div class="image">
-                <img src="images/blog-3.jpg" alt="">
+                <img src="images/blog-3.jpg" alt="" onclick="showAlert(event)">
             </div>
             <div class="content">
                 <a href="#" class="title">Recipe 3</a>
                 <span>by team13 / 23.01.2025</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                <a href="#" class="btn">read more</a>
-            </div>
+                <a href="#" class="btn" onclick="showAlert(event, 'Just stop sending request please')">read more</a>            </div>
         </div>
 
     </div>
 </section>
+
 
 <section class="footer">
 
