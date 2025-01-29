@@ -4,8 +4,8 @@ link: https://lekhangnguyen.github.io/vietrestaurantstatic/
 **Course:** Building Static Websites  
 **Group 13:**  
 - **Augustine, Nguyen Le Khang** (Team Lead) - Technical Lead, Code Implementation  
-- **Akter Sanjida** - HTML Structure & Design  
-- **Muskan Umme** - UX/UI Design, CSS Styling  
+- **Akter Sanjida** - Debugging and advise on HTML Structure & Design  
+- **Muskan Umme** - Debugging and advise on UX/UI Design, CSS Styling  
 
 **Lecturer:** Dr. Jawad  
 
