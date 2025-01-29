@@ -57,6 +57,3 @@ Below are some snapshots of the website:
 - **Augustine, Nguyen Le Khang** - Team Lead, Technical Implementation, Coding
 - **Akter Sanjida** - HTML Structure & Layout Design
 - **Muskan Umme** - UX/UI Design, CSS Styling, Visual Enhancements
-
----
-This project showcases a well-structured and visually appealing static website. Future improvements can be made to enhance functionality and interactivity.
