@@ -35,7 +35,7 @@ The website consists of the following sections:
 - **Form Validation:** The contact form requires valid input; otherwise, a pop-up notification alerts the user.
 
 ## Project Scope
-Since this is a static website, the primary focus is on frontend design and HTML structure. No backend functionality is included in this version.
+Since this is a static website, the primary focus is on frontend design and HTML structure.
 
 ## Future Development Ideas
 - **Blog Expansion:** Create individual pages for each blog post to enhance user experience and content readability.
